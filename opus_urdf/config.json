@@ -1,0 +1,11 @@
+{
+    "documentId": "6791a2c4d6d4567f83869291",
+    "outputFormat": "urdf",
+    "assemblyName": "opus",
+    "robotName": "opus",
+    "packageName": "opus_urdf",
+    "mergeSTLs": "all",
+    "mergeSTLsCollisions": true,
+    "simplifySTLs": "all",
+    "maxSTLSize": 3
+}
