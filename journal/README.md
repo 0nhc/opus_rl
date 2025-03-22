@@ -1,5 +1,8 @@
 # Northwestern Humanoid
 ## 1. Abstract
+
+https://github.com/user-attachments/assets/a4b5c8f8-0123-4a7b-9ca2-39ded27508e1
+
 I developed a middle-sized humanoid robot from scratch independently. For the mechanical design side, I applied an offset angle to the pelvis, and manufactured the hardwarew with 3D printing. For the locomotion algorithm side, I designed a set of reward funcitons and applied PPO reinforcement learning with [rsl_rl](https://github.com/leggedrobotics/rsl_rl) library and [Genesis](https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html) simulator to make the humanoid robot walking. In conclusion, after this 10-week project, I developed the humanoid robot hardware, interfaced motors and sensors with ROS, and made the robot walking in simulation with a RL policy.
 
 ## 2. Motivation
