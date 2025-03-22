@@ -43,11 +43,11 @@ Designing dual degrees of freedom for the ankle joint (Ankle Roll and Ankle Pitc
 
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 20px; text-align: center;">
-    <img src="mit_humanoid.png" alt="MIT Humanoid" height="150">
+    <img src="mit_humanoid.png" alt="MIT Humanoid" height="100">
     <figcaption style="margin-top: 10px;">MIT Humanoid</figcaption>
   </figure>
   <figure style="display: inline-block; margin: 20px; text-align: center;">
-    <img src="duke_humanoid.png" alt="Duke Humanoid" height="150">
+    <img src="duke_humanoid.png" alt="Duke Humanoid" height="100">
     <figcaption style="margin-top: 10px;">Duke Humanoid</figcaption>
   </figure>
 </div>
