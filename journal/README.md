@@ -1,6 +1,6 @@
 # Northwestern Humanoid
 ## 1. Abstract
-I developed a middle-sized humanoid robot from scratch independently. For the mechanical design side, I applied an offset angle to the pelvis, and manufactured the hardwarew with 3D printing. For the locomotion algorithm side, I designed a set of reward funcitons and applied PPO reinforcement learning with [rsl_rl]() library and [Genesis]() simulator to make the humanoid robot walking. In conclusion, after this 10-week project, I developed the humanoid robot hardware, interfaced motors and sensors with ROS, and made the robot walking in simulation with a RL policy.
+I developed a middle-sized humanoid robot from scratch independently. For the mechanical design side, I applied an offset angle to the pelvis, and manufactured the hardwarew with 3D printing. For the locomotion algorithm side, I designed a set of reward funcitons and applied PPO reinforcement learning with [rsl_rl](https://github.com/leggedrobotics/rsl_rl) library and [Genesis](https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html) simulator to make the humanoid robot walking. In conclusion, after this 10-week project, I developed the humanoid robot hardware, interfaced motors and sensors with ROS, and made the robot walking in simulation with a RL policy.
 
 ## 2. Motivation
 To provide clarity before diving into the technical objectives, this section outlines the background of the proposed hardware and software improvements for middle-sized humanoid robots.
@@ -119,7 +119,7 @@ For hip joints, motors are directly controlling joint angles without any transmi
 
 For the knee joint and angkle joint, I am using parallelogram structure with rods for transmission. 
 With this design, the motors are places closer to the hip, thus decreasing the rotational intertia of the leg.
-This is ide ais first proposed in the [MIT Mini Cheetah](), then widely applied in many products such as [Unitree Go 2]()
+This is ide ais first proposed in the [MIT Mini Cheetah](https://dspace.mit.edu/handle/1721.1/126619), then widely applied in many products such as [Unitree Go 2](https://shop.unitree.com/products/unitree-go2?srsltid=AfmBOoow1_Y2BcLgd206E9Dj_2b_1JJqk6k66iqFRs8qWj2XOWaKf1AK)
 <p align="center">
   <img src="real_hardware.png" alt="real_hardware" width="75%">
   <br>
@@ -127,11 +127,18 @@ This is ide ais first proposed in the [MIT Mini Cheetah](), then widely applied 
 </p>
 
 #### 3.2.3 Manufacturing
+
+<p align="center">
+  <img src="manufac.png" alt="manufac" width="75%">
+  <br>
+  <em>Different Ways of Manufacturing</em>
+</p>
+
 I was originally planning to use CNC with 6061 Aluminum Alloy to manufacture the structures.
 However the cost is too high (about $8, 000). Thus, I am using 3D printing with the PA6-CF filament.
 In general, the PA6-CF is about 30%-50% performance of aluminum 6061 alloy.
 
-There is detailed performance comparison for PA6-CF and 6061 Aluminum Alloy in my [Slides]().
+There is detailed performance comparison for PA6-CF and 6061 Aluminum Alloy in my [Slides](https://docs.google.com/presentation/d/1MNszr2vIThjyHmdqRFD0j22BspOMXgXHbe75w9jpFPk/edit?usp=sharing).
 
 
 
@@ -139,16 +146,16 @@ There is detailed performance comparison for PA6-CF and 6061 Aluminum Alloy in m
 
 https://github.com/user-attachments/assets/b38f5260-8ca4-47f0-b4c2-bad7fd30dd0a
 
-I am using [rsl_rl]() with [Genesis]() in a PPO manner to train a walking policy.
-I borrowed some reward functions and observations from [unitree_rl_gym]().
+I am using [rsl_rl](https://github.com/leggedrobotics/rsl_rl/) with [Genesis](https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html) in a PPO manner to train a walking policy.
+I borrowed some reward functions and observations from [unitree_rl_gym](https://github.com/unitreerobotics/unitree_rl_gym).
 
-See my detailed code implementation in [opus_rl]().
+See my detailed code implementation in [opus_rl](https://github.com/0nhc/opus_rl).
 
 ### 3.4 Software
 The system is based on ROS.
 Although I haven't deployed the RL policy on the real hardware, I have interfaced motors and sensors into ROS.
 
-There is detailed showcase in my [Slides]().
+There is detailed showcase in my [Slides](https://docs.google.com/presentation/d/1MNszr2vIThjyHmdqRFD0j22BspOMXgXHbe75w9jpFPk/edit?usp=sharing).
 
 ## 4. conclusion
 In my proposal, the goals are:
