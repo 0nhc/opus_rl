@@ -41,16 +41,17 @@ By aligning with natural human anatomy, this design not only enhances mechanical
 
 Designing dual degrees of freedom for the ankle joint (Ankle Roll and Ankle Pitch) is relatively straightforward in full-sized humanoid robots due to the ample available space. However, in middle-sized humanoid robots, limited space creates significant challenges. Robots like the MIT Humanoid [1] and Duke Humanoid [2] address this constraint by including only an Ankle Pitch degree of freedom:
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 20px; text-align: center;">
-    <img src="mit_humanoid.png" alt="MIT Humanoid" height="100">
-    <figcaption style="margin-top: 10px;">MIT Humanoid</figcaption>
-  </figure>
-  <figure style="display: inline-block; margin: 20px; text-align: center;">
-    <img src="duke_humanoid.png" alt="Duke Humanoid" height="100">
-    <figcaption style="margin-top: 10px;">Duke Humanoid</figcaption>
-  </figure>
-</div>
+<p align="center">
+  <img src="mit_humanoid.png" alt="mit_humanoid" width="50%">
+  <br>
+  <em>MIT Humanoid</em>
+</p>
+
+<p align="center">
+  <img src="duke_humanoid.png" alt="duke_humanoid" width="50%">
+  <br>
+  <em>Duke Humanoid</em>
+</p>
 
 The Berkeley Humanoid [3] attempts to overcome this limitation by adding a small motor to achieve Ankle Roll:
 
